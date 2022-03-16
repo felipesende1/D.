@@ -1,0 +1,174 @@
+body{
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+padding: 20px;
+position: fixed;
+left: 0;
+right: 0;
+top: 0;
+}
+
+header .logo {
+ font-size: 25px;
+ font-weight: bold;
+ color: #fff;
+}
+
+header .menu {
+    width: 40px;
+    height: 20px;
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+ 
+header  .menu-line{
+height: 3px;
+background-color: #333;
+}
+
+.container {
+display: flex;
+height: 100vh;
+
+}
+
+.container .leftside{
+    background-color: #cf1313;
+flex: 1;
+display: flex;
+align-items: center;
+padding:0 30px;
+
+}
+.container .rightside{
+    flex:1;
+    background-image:url('../images/monkey-d-luffy-png-5.jpg');
+    background-size: cover;
+    background-position: center top;
+
+}
+.container .info{
+color: aliceblue;
+}
+.container .info .profession{
+font-weight: bold;
+text-transform: uppercase;
+font-size: 22px;
+}
+.container .info .name{
+    font-weight: bold;
+    font-size: 90px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.container .info .buttons a{
+display: inline-block;
+background-color:#fff;
+color: rgb(43, 43, 41);
+padding: 20px 40px;
+font-size: 17px;
+text-decoration:none;
+text-transform: uppercase;
+font-weight: bold;
+box-shadow: 0px 0px 30px rgb(12, 12, 12);
+border-radius: 10px;
+margin-right: 20px;
+
+}
+.container .info .buttons a.light{
+
+color: #fff;
+background-color: #cf1313;
+
+}
+
+.container .info .buttons a:hover{
+opacity: 0.5;
+
+
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@media (max-width: 850px)
+
+header {
+    position:inital;
+background-color: #cf1313;
+
+}
+header .menu-line {
+    background-color: #fff;
+}
+
+
+.container {
+    flex-direction:column;
+    height: 100vh -66px;
+    height: calc(100vh - 66xp);
+}
+
+
+
+.container .leftside{
+    flex:none;
+    padding: 50px 20px;
+    justify-content: center;
+    texte-aling:center;
+
+    
+
+}
+    
+footer{
+    position: initial;
+    color: #333;
+    font-size: 17px;
+}
+
+footer a{
+    color: #333;
+    font-size: 20px;
+}
+@media (max-width:450px) {
+    .container .leftside .info .name
+    font-size: 80px;
+
+}
+
+
+.container .leftside .info .buttons a {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
